@@ -2,12 +2,13 @@ version: '3'
 
 services:
   api:
-    image: your-api-image:latest
+ 
     build: ./api
     ports:
       - "5000:5000"
   web:
-    image: php:7-apache
+
+    build: ./www
     ports:
       - "80:80"
     environment:
